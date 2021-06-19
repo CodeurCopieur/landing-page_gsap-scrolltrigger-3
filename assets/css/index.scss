@@ -1,25 +1,59 @@
 *, ::before, ::after {
     margin: 0;
     padding: 0;
-    
+    list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.center-img {
+  display: grid;
+  height: inherit;
+  justify-content: center;
+  align-content: start;
+
+  .img-text{
+    margin-top: 20px;
+
+    .bold{font-weight: bold;}
   }
-  
-  html {
-    box-sizing: border-box;
-    scrollbar-width: none;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: inherit;
+  position: relative;
+  background-color: #fefefe;
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+
+  .home {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: grid;
+    grid-template-rows: 130px 1fr 250px;
+
+    .top {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+    }
   }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  body {
-    font-family: sans-serif;
-    box-sizing: inherit;
-    position: relative;
-    background-color: #fefefe;
-    overflow-x: hidden;
-  }
+}
