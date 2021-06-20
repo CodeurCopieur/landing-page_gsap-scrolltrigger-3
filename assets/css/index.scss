@@ -40,6 +40,7 @@ body {
 .main {
   position: relative;
 
+  //section home
   .home {
     height: 100vh;
     position: fixed;
@@ -54,6 +55,30 @@ body {
     .top {
       display: grid;
       grid-template-columns: repeat(3, auto);
+      align-items: center;
+      margin: 0 50px;
+
+      .nav-list {
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-item {
+        margin: 0 20px;
+      }
+
+      .nav-link{
+        padding: 8px 10px;
+        text-decoration: none;
+      }
+
+      .right {
+        justify-content: end;
+      }
+    }
+
+    .heading-main {
+
     }
   }
 }
